@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">GADS LeaderBoard app</string>
+
+    <string name="tab_label1">Learning Leaders</string>
+    <string name="tab_label2">Skill IQ Leaders</string>
+    <string name="submit_btn">Submit</string>
+    <string name="leaderboad_title">LEADERBOAD</string>
+    <string name="first_name_hint">First Name</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="email_hint">Email Address</string>
+    <string name="github_link_hint">Project on GITHUB (link)</string>
+    <string name="failure_message">Submission not Successful</string>
+    <string name="success_message">Submission Successful</string>
+
+</resources>
