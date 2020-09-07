@@ -30,7 +30,7 @@ public class ConfirmationFragment extends Fragment {
 
     private static final String TAG = "ConfirmationFragment";
 
-    private static final String SUBMIT_LINK = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfxDJDrchy0FjSXuHkOXz90A3z_qNCTaSMJTSeXkZPnPRdIcg/formResponse";
+    private static final String SUBMIT_LINK = "https://docs.google.com/forms/d/e/1FAIpQLSf9d1TcNU6zc6KR8bSEM41Z1g1zl35cwZr2xyjIhaMAz8WChQ/formResponse";
     private String mEmail;
     private String mFirstName;
     private String mLastName;
@@ -93,12 +93,23 @@ public class ConfirmationFragment extends Fragment {
 
                 @Override
                 public void onResponse(Call<Void> call, Response<Void> response) {
-                    Log.d(TAG, "onResponse: "+response.code());
-                    SuccessAlert successAlert = new SuccessAlert();
-                    mManager = getParentFragmentManager();
-                    FragmentTransaction transaction = mManager.beginTransaction();
-                    transaction.replace(R.id.container,successAlert);
-                    transaction.commit();
+                    if(response.isSuccessful()){
+                        Log.d(TAG, "onResponse: submitted successfully");
+                        Log.d(TAG, "onResponse: "+response.code());
+                        SuccessAlert successAlert = new SuccessAlert();
+                        mManager = getParentFragmentManager();
+                        FragmentTransaction transaction = mManager.beginTransaction();
+                        transaction.replace(R.id.container,successAlert);
+                        transaction.commit();
+                    }
+                    else{
+                        FailureAlert failureAlert = new FailureAlert();
+                        mManager = getParentFragmentManager();
+                        FragmentTransaction transaction = mManager.beginTransaction();
+                        transaction.replace(R.id.container,failureAlert);
+                        transaction.commit();
+                    }
+
                 }
 
 

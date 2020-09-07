@@ -37,8 +37,7 @@ public class SubmitActivity extends AppCompatActivity {
 
     public static final String BUNDLE_KEY = "send_form";
 
-    private static final String SUBMIT_LINK = "https://docs.google.com/forms/d/e/1FAIpQLSf9d1TcNU6zc6KR8bSEM41Z1g1zl35cwZr2xyjIhaMAz8WChQ/formResponse"
-            ;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
