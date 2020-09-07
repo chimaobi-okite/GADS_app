@@ -1,19 +1,23 @@
-package com.example.gadsleaderboardapp;
+package com.example.gadsleaderboardapp.models;
 
 import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
-@Entity(tableName = "skills_table")
-public class Skill {
+@Entity(tableName = "hours_table")
+public class Hours {
     @ColumnInfo
     @NonNull
     private String name;
 
+    @PrimaryKey(autoGenerate = true)
+    private int id;
+
     @ColumnInfo
     @NonNull
-    private int score;
+    private int hours;
 
     @ColumnInfo
     @NonNull
@@ -23,12 +27,9 @@ public class Skill {
     @NonNull
     private String badgeUrl;
 
-    @PrimaryKey(autoGenerate = true)
-    private int id;
-
-    public Skill(String name, int score, String country, String badgeUrl) {
+    public Hours(String name, int hours, String country, String badgeUrl) {
         this.name = name;
-        this.score = score;
+        this.hours = hours;
         this.country = country;
         this.badgeUrl = badgeUrl;
     }
@@ -41,12 +42,12 @@ public class Skill {
         this.name = name;
     }
 
-    public int getScore() {
-        return score;
+    public int getHours() {
+        return hours;
     }
 
-    public void setScore(int score) {
-        this.score = score;
+    public void setHours(int hours) {
+        this.hours = hours;
     }
 
     public String getCountry() {

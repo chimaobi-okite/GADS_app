@@ -1,8 +1,6 @@
 package com.example.gadsleaderboardapp;
 
 import androidx.lifecycle.LifecycleOwner;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProviders;
 
 import android.os.Bundle;
@@ -18,10 +16,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.google.android.material.snackbar.BaseTransientBottomBar;
+import com.example.gadsleaderboardapp.adapters.HoursAdapter;
+import com.example.gadsleaderboardapp.data.GadsViewModel;
 import com.google.android.material.snackbar.Snackbar;
-
-import java.util.ArrayList;
 
 import static com.google.android.material.snackbar.BaseTransientBottomBar.LENGTH_LONG;
 

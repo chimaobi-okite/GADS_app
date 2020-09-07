@@ -1,4 +1,4 @@
-package com.example.gadsleaderboardapp;
+package com.example.gadsleaderboardapp.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,6 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.gadsleaderboardapp.R;
+import com.example.gadsleaderboardapp.models.Hours;
 
 import java.util.List;
 

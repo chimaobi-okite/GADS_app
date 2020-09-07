@@ -1,10 +1,13 @@
-package com.example.gadsleaderboardapp;
+package com.example.gadsleaderboardapp.data;
 
 import android.content.Context;
 
 import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
+
+import com.example.gadsleaderboardapp.models.Hours;
+import com.example.gadsleaderboardapp.models.Skill;
 
 @Database(entities = {Hours.class, Skill.class}, version = 3, exportSchema = false)
 public abstract class GadsRoomDatabase extends RoomDatabase {

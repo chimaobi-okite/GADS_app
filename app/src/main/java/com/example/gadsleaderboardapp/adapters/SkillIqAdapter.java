@@ -1,7 +1,6 @@
-package com.example.gadsleaderboardapp;
+package com.example.gadsleaderboardapp.adapters;
 
 import android.content.Context;
-import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,8 +11,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.gadsleaderboardapp.R;
+import com.example.gadsleaderboardapp.models.Skill;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class SkillIqAdapter extends RecyclerView.Adapter<SkillIqAdapter.SkillViewHolder> {

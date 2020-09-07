@@ -18,6 +18,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.gadsleaderboardapp.adapters.SkillIqAdapter;
+import com.example.gadsleaderboardapp.data.GadsViewModel;
+import com.example.gadsleaderboardapp.models.Skill;
 import com.example.gadsleaderboardapp.services.Skillservice;
 
 import java.util.ArrayList;

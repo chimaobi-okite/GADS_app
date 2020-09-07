@@ -1,9 +1,12 @@
-package com.example.gadsleaderboardapp;
+package com.example.gadsleaderboardapp.adapters;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentStatePagerAdapter;
+
+import com.example.gadsleaderboardapp.HoursFragment;
+import com.example.gadsleaderboardapp.SkillIqFragment;
 
 public class PagerAdapter extends FragmentStatePagerAdapter {
     int mNumOfTabs;

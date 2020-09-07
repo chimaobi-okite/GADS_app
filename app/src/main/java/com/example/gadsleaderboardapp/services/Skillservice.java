@@ -1,11 +1,8 @@
 package com.example.gadsleaderboardapp.services;
 
-import androidx.lifecycle.LiveData;
+import com.example.gadsleaderboardapp.models.Hours;
+import com.example.gadsleaderboardapp.models.Skill;
 
-import com.example.gadsleaderboardapp.Hours;
-import com.example.gadsleaderboardapp.Skill;
-
-import java.util.ArrayList;
 import java.util.List;
 
 import retrofit2.Call;
@@ -26,10 +23,10 @@ public interface Skillservice {
     @FormUrlEncoded
     @POST
     Call<Void> submitData(@Url String formUrl,
-                          @Field("entry.1724812527") String email,
-                          @Field("entry.420022196") String firstName,
-                          @Field("entry.895527790") String lastName,
-                          @Field("entry.1124918817") String link);
+                          @Field("entry.1824927963") String email,
+                          @Field("entry.1877115667") String firstName,
+                          @Field("entry.2006916086") String lastName,
+                          @Field("entry.284483984") String link);
 
 
 }

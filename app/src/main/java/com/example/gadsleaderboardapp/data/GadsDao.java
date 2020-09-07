@@ -1,4 +1,4 @@
-package com.example.gadsleaderboardapp;
+package com.example.gadsleaderboardapp.data;
 
 import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
@@ -6,7 +6,9 @@ import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 
-import java.util.ArrayList;
+import com.example.gadsleaderboardapp.models.Hours;
+import com.example.gadsleaderboardapp.models.Skill;
+
 import java.util.List;
 
 @Dao

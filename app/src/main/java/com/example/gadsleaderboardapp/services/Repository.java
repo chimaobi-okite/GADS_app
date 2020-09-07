@@ -2,20 +2,16 @@ package com.example.gadsleaderboardapp.services;
 
 import android.app.Application;
 import android.os.AsyncTask;
-import android.util.Log;
 
 import androidx.lifecycle.LiveData;
-import androidx.lifecycle.MutableLiveData;
 
-import com.example.gadsleaderboardapp.GadsRoomDatabase;
-import com.example.gadsleaderboardapp.Hours;
-import com.example.gadsleaderboardapp.GadsDao;
+import com.example.gadsleaderboardapp.data.GadsRoomDatabase;
+import com.example.gadsleaderboardapp.models.Hours;
+import com.example.gadsleaderboardapp.data.GadsDao;
 import com.example.gadsleaderboardapp.MainActivity;
-import com.example.gadsleaderboardapp.Skill;
+import com.example.gadsleaderboardapp.models.Skill;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 import retrofit2.Call;
 import retrofit2.Callback;

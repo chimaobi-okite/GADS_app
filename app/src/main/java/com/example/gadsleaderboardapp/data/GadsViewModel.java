@@ -1,16 +1,15 @@
-package com.example.gadsleaderboardapp;
+package com.example.gadsleaderboardapp.data;
 
 import android.app.Application;
-import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
-import androidx.lifecycle.ViewModel;
 
+import com.example.gadsleaderboardapp.models.Hours;
+import com.example.gadsleaderboardapp.models.Skill;
 import com.example.gadsleaderboardapp.services.Repository;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class GadsViewModel extends AndroidViewModel {

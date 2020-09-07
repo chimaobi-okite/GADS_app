@@ -37,16 +37,14 @@ public class SubmitActivity extends AppCompatActivity {
 
     public static final String BUNDLE_KEY = "send_form";
 
-    private static final String SUBMIT_LINK = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfxDJDrchy0FjSXuHkOXz90A3z_qNCTaSMJTSeXkZPnPRdIcg/formResponse";
+    private static final String SUBMIT_LINK = "https://docs.google.com/forms/d/e/1FAIpQLSf9d1TcNU6zc6KR8bSEM41Z1g1zl35cwZr2xyjIhaMAz8WChQ/formResponse"
+            ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_submit);
 
-        Toolbar toolbar = findViewById(R.id.submit_toolbar);
-        setSupportActionBar(toolbar);
-        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         TextView submitTxt = findViewById(R.id.main_submit);
         Drawable drawable = submitTxt.getBackground();
@@ -60,6 +58,14 @@ public class SubmitActivity extends AppCompatActivity {
 
         ImageView toolbarImage = findViewById(R.id.toolbar_image);
         Glide.with(this).load(R.drawable.gads_header).into(toolbarImage);
+
+        ImageView backArrowImage = findViewById(R.id.back_arrow);
+        backArrowImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SubmitActivity.super.onBackPressed();
+            }
+        });
 
         mFirstNameTxt = findViewById(R.id.first_name);
         mLastNameTxt = findViewById(R.id.last_name);

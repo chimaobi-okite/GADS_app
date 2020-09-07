@@ -14,18 +14,18 @@
     android:layout_height="match_parent"
     tools:context=".SubmitActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/submit_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
         <RelativeLayout
             android:layout_width="match_parent"
+            android:layout_margin="16dp"
             android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/white_ic_back"
+                android:id="@+id/back_arrow"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"/>
 
             <ImageView
                 android:layout_width="200dp"
@@ -38,7 +38,6 @@
 
 
 
-    </androidx.appcompat.widget.Toolbar>
 
 
 
